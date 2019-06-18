@@ -1,8 +1,9 @@
-from s2clientprotocol import sc2api_pb2 as sc_pb
-from .protocol import Protocol
-from .player import Computer
-
 import logging
+from s2clientprotocol import sc2api_pb2 as sc_pb
+
+from .player import Computer
+from .protocol import Protocol
+
 logger = logging.getLogger(__name__)
 
 class Controller(Protocol):

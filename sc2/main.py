@@ -1,15 +1,15 @@
-import asyncio
 import async_timeout
+import asyncio
+import logging
 import time
 
-import logging
 logger = logging.getLogger(__name__)
 
 from .sc2process import SC2Process
 from .portconfig import Portconfig
 from .client import Client
 from .player import Human, Bot
-from .data import Race, Difficulty, Result, ActionResult, CreateGameError
+from .data import Result, CreateGameError
 from .game_state import GameState
 from .protocol import ConnectionAlreadyClosed, ProtocolError
 

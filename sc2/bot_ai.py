@@ -1,19 +1,13 @@
-import math
-import random
-
 import logging
-from typing import List, Dict, Set, Tuple, Any, Optional, Union # mypy type checking
+from typing import List, Union # mypy type checking
 
 # imports for mypy and pycharm autocomplete
-from .game_state import GameState
-from .game_data import GameData
 
 logger = logging.getLogger(__name__)
 
 from .position import Point2, Point3
-from .data import Race, ActionResult, Attribute, race_worker, race_townhalls, race_gas, Target, Result
+from .data import Race, ActionResult, race_worker, race_townhalls, race_gas, Result
 from .unit import Unit
-from .cache import property_cache_forever, property_cache_once_per_frame
 from .game_data import AbilityData
 from .ids.unit_typeid import UnitTypeId
 from .ids.ability_id import AbilityId

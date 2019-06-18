@@ -1,14 +1,10 @@
 from importlib import reload
-import argparse
-
-import sys
-import asyncio
 
 import sc2
 from sc2 import Race, Difficulty
 from sc2.player import Bot, Computer
-
 from zerg import zerg_rush
+
 
 def main():
     player_config = [

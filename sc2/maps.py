@@ -1,6 +1,7 @@
+import logging
+
 from .paths import Paths
 
-import logging
 logger = logging.getLogger(__name__)
 
 def get(name=None):

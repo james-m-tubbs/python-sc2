@@ -1,15 +1,9 @@
-from typing import Any, Dict, List, Optional, Set, Tuple, Union  # mypy type checking
+from typing import Set  # mypy type checking
 
+from .constants import geyser_ids, mineral_ids
 from .data import Alliance, DisplayType
 from .ids.effect_id import EffectId
 from .ids.upgrade_id import UpgradeId
-from .ids.unit_typeid import UnitTypeId
-from .pixel_map import PixelMap
-from .position import Point2, Point3
-from .power_source import PsionicMatrix
-from .score import ScoreDetails
-from .units import Units
-from .constants import geyser_ids, mineral_ids
 
 
 class Blip:
@@ -141,7 +135,7 @@ class GameState:
 
         self.blips: Set[Blip] = {Blip(unit) for unit in hiddenUnits}
         self.visibility: PixelMap = PixelMap(self.observation_raw.map_state.visibility)
-        self.creep: PixelMap = PixelMap(self.observation_raw.map_state.creep)
+        self.creep: PixelMap = PixelMap(self.observation_raw.map_state.creep, in_bits=True, mirrored=True)
 
         self.effects: Set[EffectData] = {
             EffectData(effect) for effect in self.observation_raw.effects

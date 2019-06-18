@@ -1,14 +1,9 @@
-from functools import reduce
-from operator import or_
 import random
 
 import sc2
 from sc2 import Race, Difficulty
-from sc2.constants import *
 from sc2.player import Bot, Computer
-from sc2.data import race_townhalls
 
-import enum
 
 class Hydralisk(sc2.BotAI):
     def select_target(self):
@@ -89,7 +84,7 @@ class Hydralisk(sc2.BotAI):
                 await self.do(larvae.random.train(ZERGLING))
 
 def main():
-    sc2.run_game(sc2.maps.get("(2)CatalystLE"), [
+    sc2.run_game(sc2.maps.get("AbyssalReefLE"), [
         Bot(Race.Zerg, Hydralisk()),
         Computer(Race.Terran, Difficulty.Medium)
     ], realtime=False, save_replay_as="ZvT.SC2Replay")

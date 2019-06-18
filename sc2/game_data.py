@@ -1,14 +1,11 @@
 from bisect import bisect_left
 from functools import lru_cache, reduce
-from typing import List, Dict, Set, Tuple, Any, Optional, Union # mypy type checking
-
-from .data import Attribute, Race
-from .unit_command import UnitCommand
-
-from .ids.unit_typeid import UnitTypeId
-from .ids.ability_id import AbilityId
+from typing import List, Dict  # mypy type checking
 
 from .constants import ZERGLING
+from .ids.ability_id import AbilityId
+from .ids.unit_typeid import UnitTypeId
+from .unit_command import UnitCommand
 
 FREE_MORPH_ABILITY_CATEGORIES = [
     "Lower", "Raise", # SUPPLYDEPOT
@@ -90,7 +87,7 @@ class AbilityData:
         self._game_data = game_data
         self._proto = proto
 
-        assert self.id != 0
+        #assert self.id != 0
 
     def __repr__(self) -> str:
         return f"AbilityData(name={self._proto.button_name})"

@@ -2,8 +2,8 @@ import random
 
 import sc2
 from sc2 import Race, Difficulty
-from sc2.constants import *
 from sc2.player import Bot, Computer
+
 
 class CannonRushBot(sc2.BotAI):
     async def on_step(self, iteration):

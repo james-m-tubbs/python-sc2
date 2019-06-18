@@ -1,9 +1,7 @@
-from collections import deque
-from typing import Any, Dict, FrozenSet, Generator, List, Optional, Sequence, Set, Tuple, Union
+from typing import Dict, List, Set
 
-from .pixel_map import PixelMap
 from .player import Player
-from .position import Point2, Rect, Size
+from .position import Point2, Rect
 
 
 class Ramp:

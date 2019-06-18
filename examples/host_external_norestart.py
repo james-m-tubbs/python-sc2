@@ -1,8 +1,3 @@
-import argparse
-
-import sys
-import asyncio
-
 import sc2
 from sc2 import Race
 from sc2.player import Bot

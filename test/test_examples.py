@@ -1,15 +1,15 @@
 import pytest
 
 import sc2
+from examples.protoss.cannon_rush import CannonRushBot
+from examples.protoss.warpgate_push import WarpGateBot
+from examples.terran.proxy_rax import ProxyRaxBot
+from examples.terran.ramp_wall import RampWallBot
+from examples.zerg.onebase_broodlord import BroodlordBot
+from examples.zerg.zerg_rush import ZergRushBot
 from sc2 import Race, Difficulty
 from sc2.player import Bot, Computer
 
-from examples.terran.proxy_rax import ProxyRaxBot
-from examples.terran.ramp_wall import RampWallBot
-from examples.protoss.cannon_rush import CannonRushBot
-from examples.protoss.warpgate_push import WarpGateBot
-from examples.zerg.zerg_rush import ZergRushBot
-from examples.zerg.onebase_broodlord import BroodlordBot
 
 def run_example(caplog, race, bot):
     result = sc2.run_game(sc2.maps.get("Sequencer LE"), [

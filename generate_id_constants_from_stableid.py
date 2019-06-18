@@ -72,7 +72,7 @@ def parse_data(data):
 
         if key in abilities and v["index"] == 0:
             print(key)
-            raise ValueError
+            #raise ValueError
         abilities[key] = v["id"]
 
     abilities["SMART"] = 1

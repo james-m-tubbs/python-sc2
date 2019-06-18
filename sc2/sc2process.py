@@ -1,17 +1,16 @@
+import aiohttp
+import asyncio
+import logging
+import os.path
+import portpicker
+import shutil
+import signal
+import subprocess
+import sys
+import tempfile
+import time
 from typing import Any, Optional, List
 
-import sys
-import signal
-import time
-import asyncio
-import os.path
-import shutil
-import tempfile
-import subprocess
-import portpicker
-import aiohttp
-
-import logging
 logger = logging.getLogger(__name__)
 
 from .paths import Paths

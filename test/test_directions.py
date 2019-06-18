@@ -1,5 +1,6 @@
-from math import pi, sqrt, sin, cos, atan2
 import random
+from math import pi, sqrt, sin, cos, atan2
+
 from sc2.position import Point2, EPSILON
 
 P0 = Point2((0, 0))

@@ -6,10 +6,10 @@ from s2clientprotocol import (
     common_pb2 as common_pb,
     error_pb2 as error_pb
 )
-from typing import List, Dict, Set, Tuple, Any, Optional, Union # mypy type checking
+from typing import Dict, Set  # mypy type checking
 
-from .ids.unit_typeid import UnitTypeId
 from .ids.ability_id import AbilityId
+from .ids.unit_typeid import UnitTypeId
 
 """ For the list of enums, see here
 

@@ -1,5 +1,4 @@
 import datetime
-
 from s2clientprotocol import (
     score_pb2 as score_pb,
 )

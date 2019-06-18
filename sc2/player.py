@@ -1,5 +1,6 @@
-from .data import PlayerType, Race, Difficulty
 from .bot_ai import BotAI
+from .data import PlayerType, Race, Difficulty
+
 
 class AbstractPlayer:
     def __init__(self, p_type, race=None, name=None, difficulty=None):

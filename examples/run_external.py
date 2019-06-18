@@ -1,13 +1,11 @@
 import argparse
-
-import sys
 import asyncio
 
 import sc2
 from sc2 import Race
 from sc2.player import Bot
-
 from zerg.zerg_rush import ZergRushBot
+
 
 def main(is_host, pc):
     if args.portconfig:

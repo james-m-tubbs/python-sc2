@@ -1,10 +1,9 @@
-from typing import Any, Dict, List, Optional, Set, Tuple, Union  # mypy type checking
+from typing import Union  # mypy type checking
 
 from sc2.ids.buff_id import BuffId
-
-from .cache import property_mutable_cache, property_immutable_cache
 from . import unit_command
-from .data import Alliance, Attribute, CloakState, DisplayType, Race, TargetType, warpgate_abilities
+from .cache import property_immutable_cache
+from .data import DisplayType, warpgate_abilities
 from .game_data import GameData
 from .ids.ability_id import AbilityId
 from .ids.unit_typeid import UnitTypeId

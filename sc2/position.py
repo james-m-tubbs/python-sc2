@@ -1,7 +1,7 @@
 import itertools
 import math
 import random
-from typing import Any, Dict, List, Optional, Set, Tuple, Union  # for mypy type checking
+from typing import List, Set, Union  # for mypy type checking
 
 FLOAT_DIGITS = 8
 EPSILON = 10 ** (-FLOAT_DIGITS)

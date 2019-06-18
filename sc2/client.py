@@ -1,12 +1,8 @@
+import logging
 from s2clientprotocol import (
     sc2api_pb2 as sc_pb,
-    common_pb2 as common_pb,
-    query_pb2 as query_pb,
     debug_pb2 as debug_pb,
-    raw_pb2 as raw_pb,
 )
-
-import logging
 
 from sc2.ids.ability_id import AbilityId
 from sc2.ids.unit_typeid import UnitTypeId
@@ -16,14 +12,14 @@ logger = logging.getLogger(__name__)
 
 from .protocol import Protocol, ProtocolError
 from .game_info import GameInfo
-from .game_data import GameData, AbilityData
+from .game_data import GameData
 from .data import Status, Result
-from .data import Race, ActionResult, ChatChannel
+from .data import Race, ActionResult
 from .action import combine_actions
 from .position import Point2, Point3
 from .unit import Unit
 from .units import Units
-from typing import List, Dict, Set, Tuple, Any, Optional, Union  # mypy type checking
+from typing import List, Set, Union  # mypy type checking
 
 
 class Client(Protocol):
